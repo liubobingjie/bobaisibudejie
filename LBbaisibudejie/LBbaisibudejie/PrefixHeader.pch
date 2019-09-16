@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  baisibobo
+//
+//  Created by mc on 2017/10/30.
+//  Copyright © 2017年 mac. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+XMGExtension.h"
+//#import "UIBarButtonItem+BoExtension.h"
+
+#ifndef DEBUG
+#define LBlog(...) NSLog(__VA_ARGS__)
+#else
+#define LBlog(...)
+#endif
+
+
+#endif
