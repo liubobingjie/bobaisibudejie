@@ -7,6 +7,7 @@
 //
 
 #import "FriendViewController.h"
+#import "LBRecommentController.h"
 
 @interface FriendViewController ()
 
@@ -16,7 +17,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+  self.view.backgroundColor = SystemGlobaBG;
+    // 设置导航栏标题
+    self.navigationItem.title = @"我的关注";
+    
+    // 设置导航栏左边的按钮
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImage:@"friendsRecommentIcon" highImage:@"friendsRecommentIcon-click" target:self action:@selector(friendsClick)];
+    
+    
+}
+
+- (void)friendsClick{
+    LBRecommentController *vc  = [[LBRecommentController alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
+    
 }
 
 /*

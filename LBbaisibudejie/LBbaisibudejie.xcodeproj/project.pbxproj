@@ -22,6 +22,11 @@
 		4CBF7B0A232FC45600724921 /* BoTaBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF7B08232FC45500724921 /* BoTaBar.m */; };
 		4CBF7B0D232FC46800724921 /* BoTabarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF7B0C232FC46800724921 /* BoTabarController.m */; };
 		4CBF7B10232FC6CC00724921 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF7B0F232FC6CC00724921 /* HttpTool.m */; };
+		4CBF7B132332600900724921 /* BoNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF7B122332600900724921 /* BoNavigationController.m */; };
+		4CBF7B152332678400724921 /* FriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CBF7B142332678400724921 /* FriendViewController.xib */; };
+		4CBF7B1923326D0A00724921 /* LBRecommentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF7B1723326D0A00724921 /* LBRecommentController.m */; };
+		4CBF7B1A23326D0A00724921 /* LBRecommentController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CBF7B1823326D0A00724921 /* LBRecommentController.xib */; };
+		4CBF7B1C23326E0E00724921 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF7B1B23326E0E00724921 /* Foundation+Log.m */; };
 		BCBA5A52E813E961044AFA1C /* libPods-LBbaisibudejie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B74B486FA644258BF902C2 /* libPods-LBbaisibudejie.a */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +81,13 @@
 		4CBF7B0C232FC46800724921 /* BoTabarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BoTabarController.m; sourceTree = "<group>"; };
 		4CBF7B0E232FC6CC00724921 /* HttpTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
 		4CBF7B0F232FC6CC00724921 /* HttpTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
+		4CBF7B112332600900724921 /* BoNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BoNavigationController.h; sourceTree = "<group>"; };
+		4CBF7B122332600900724921 /* BoNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BoNavigationController.m; sourceTree = "<group>"; };
+		4CBF7B142332678400724921 /* FriendViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendViewController.xib; sourceTree = "<group>"; };
+		4CBF7B1623326D0A00724921 /* LBRecommentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBRecommentController.h; sourceTree = "<group>"; };
+		4CBF7B1723326D0A00724921 /* LBRecommentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBRecommentController.m; sourceTree = "<group>"; };
+		4CBF7B1823326D0A00724921 /* LBRecommentController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LBRecommentController.xib; sourceTree = "<group>"; };
+		4CBF7B1B23326E0E00724921 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		9AF7FC7F82BEB6F2080547D1 /* Pods-LBbaisibudejie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBbaisibudejie.release.xcconfig"; path = "Pods/Target Support Files/Pods-LBbaisibudejie/Pods-LBbaisibudejie.release.xcconfig"; sourceTree = "<group>"; };
 		D3897DE3D3D29273E1B90F4A /* Pods-LBbaisibudejie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBbaisibudejie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LBbaisibudejie/Pods-LBbaisibudejie.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -230,6 +242,7 @@
 		4CBF7AE2232FC0E900724921 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				4CBF7B1B23326E0E00724921 /* Foundation+Log.m */,
 				4CBF7B06232FC43700724921 /* UIBarButtonItem+BoExtension.h */,
 				4CBF7B05232FC43600724921 /* UIBarButtonItem+BoExtension.m */,
 				4CBF7AF6232FC1B800724921 /* UIView+XMGExtension.h */,
@@ -243,6 +256,8 @@
 			children = (
 				4CBF7B0B232FC46700724921 /* BoTabarController.h */,
 				4CBF7B0C232FC46800724921 /* BoTabarController.m */,
+				4CBF7B112332600900724921 /* BoNavigationController.h */,
+				4CBF7B122332600900724921 /* BoNavigationController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -368,6 +383,10 @@
 			children = (
 				4CBF7AFC232FC37600724921 /* FriendViewController.h */,
 				4CBF7AFD232FC37600724921 /* FriendViewController.m */,
+				4CBF7B142332678400724921 /* FriendViewController.xib */,
+				4CBF7B1623326D0A00724921 /* LBRecommentController.h */,
+				4CBF7B1723326D0A00724921 /* LBRecommentController.m */,
+				4CBF7B1823326D0A00724921 /* LBRecommentController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -508,7 +527,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CBF7B152332678400724921 /* FriendViewController.xib in Resources */,
 				4CBF7AB6232FBC4800724921 /* LaunchScreen.storyboard in Resources */,
+				4CBF7B1A23326D0A00724921 /* LBRecommentController.xib in Resources */,
 				4CBF7AB3232FBC4800724921 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -576,12 +597,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CBF7B0A232FC45600724921 /* BoTaBar.m in Sources */,
+				4CBF7B1C23326E0E00724921 /* Foundation+Log.m in Sources */,
 				4CBF7B04232FC3BB00724921 /* NewViewController.m in Sources */,
 				4CBF7B01232FC39A00724921 /* MeViewController.m in Sources */,
 				4CBF7AB9232FBC4800724921 /* main.m in Sources */,
+				4CBF7B132332600900724921 /* BoNavigationController.m in Sources */,
 				4CBF7AF7232FC1B800724921 /* UIView+XMGExtension.m in Sources */,
 				4CBF7AAB232FBC4700724921 /* AppDelegate.m in Sources */,
 				4CBF7AFE232FC37600724921 /* FriendViewController.m in Sources */,
+				4CBF7B1923326D0A00724921 /* LBRecommentController.m in Sources */,
 				4CBF7B0D232FC46800724921 /* BoTabarController.m in Sources */,
 				4CBF7B10232FC6CC00724921 /* HttpTool.m in Sources */,
 				4CBF7AFB232FC35600724921 /* EssenceViewController.m in Sources */,

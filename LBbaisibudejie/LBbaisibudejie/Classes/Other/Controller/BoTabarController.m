@@ -12,6 +12,7 @@
 #import "FriendViewController.h"
 #import "NewViewController.h"
 #import "BoTaBar.h"
+#import "BoNavigationController.h"
 @interface BoTabarController ()
 
 @end
@@ -49,8 +50,8 @@
     vc.tabBarItem.title = title;
     vc.tabBarItem.image = [UIImage imageNamed:image];
     vc.tabBarItem.selectedImage = [UIImage imageNamed:selectedImage];
-    vc.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(100)/100.0 green:arc4random_uniform(100)/100.0 blue:arc4random_uniform(100)/100.0 alpha:1.0];
-    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];
+    //vc.view.backgroundColor = [UIColor colorWithRed:arc4random_uniform(100)/100.0 green:arc4random_uniform(100)/100.0 blue:arc4random_uniform(100)/100.0 alpha:1.0];
+    UINavigationController *nav = [[BoNavigationController alloc]initWithRootViewController:vc];
     
     [self addChildViewController:nav];
     
