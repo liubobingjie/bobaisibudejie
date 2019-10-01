@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="user" rowHeight="71" id="KGk-i7-Jjw" customClass="LBUserRecomentViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="71"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="70.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7ht-Ay-hIu">
+                        <rect key="frame" x="10" y="10.5" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="6U3-Ho-mwR"/>
+                            <constraint firstAttribute="width" constant="50" id="Hqy-dG-AEE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tT1-n8-EDg">
+                        <rect key="frame" x="70" y="10.5" width="35.5" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3Z-f2-jb3">
+                        <rect key="frame" x="70" y="43.5" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.56470588239999997" green="0.56470588239999997" blue="0.56470588239999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X6A-8c-byO">
+                        <rect key="frame" x="259" y="23" width="51" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="+ 关注" backgroundImage="FollowBtnBg">
+                            <color key="titleColor" red="1" green="0.049570939369999997" blue="0.10867410850000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <state key="highlighted" backgroundImage="FollowBtnClickBg"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="7ht-Ay-hIu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="EG5-Tv-r3Y"/>
+                    <constraint firstAttribute="trailing" secondItem="X6A-8c-byO" secondAttribute="trailing" constant="10" id="JFz-Jy-mPG"/>
+                    <constraint firstItem="X6A-8c-byO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="UTi-VK-Xwk"/>
+                    <constraint firstItem="y3Z-f2-jb3" firstAttribute="leading" secondItem="7ht-Ay-hIu" secondAttribute="trailing" constant="10" id="atj-MV-ttK"/>
+                    <constraint firstItem="tT1-n8-EDg" firstAttribute="leading" secondItem="7ht-Ay-hIu" secondAttribute="trailing" constant="10" id="fce-M3-Las"/>
+                    <constraint firstItem="tT1-n8-EDg" firstAttribute="top" secondItem="7ht-Ay-hIu" secondAttribute="top" id="g6i-Wi-iMV"/>
+                    <constraint firstItem="y3Z-f2-jb3" firstAttribute="bottom" secondItem="7ht-Ay-hIu" secondAttribute="bottom" id="tg4-ax-v9h"/>
+                    <constraint firstItem="7ht-Ay-hIu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="xJV-gP-FpJ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="fansCountLabel" destination="y3Z-f2-jb3" id="Dxa-5x-8EB"/>
+                <outlet property="iconImageView" destination="7ht-Ay-hIu" id="I0S-nK-0nC"/>
+                <outlet property="screenName" destination="tT1-n8-EDg" id="CBo-Zb-urv"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="165.06746626686657"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="FollowBtnBg" width="51" height="25"/>
+        <image name="FollowBtnClickBg" width="51" height="25"/>
+    </resources>
+</document>

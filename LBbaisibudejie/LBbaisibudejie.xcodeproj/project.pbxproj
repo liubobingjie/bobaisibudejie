@@ -27,6 +27,12 @@
 		4CBF7B1923326D0A00724921 /* LBRecommentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF7B1723326D0A00724921 /* LBRecommentController.m */; };
 		4CBF7B1A23326D0A00724921 /* LBRecommentController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CBF7B1823326D0A00724921 /* LBRecommentController.xib */; };
 		4CBF7B1C23326E0E00724921 /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF7B1B23326E0E00724921 /* Foundation+Log.m */; };
+		4CBF7B1F2341F74200724921 /* LBRecommentCategor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF7B1E2341F74200724921 /* LBRecommentCategor.m */; };
+		4CBF7B232341F8D400724921 /* RecomentCategorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF7B212341F8D400724921 /* RecomentCategorCell.m */; };
+		4CBF7B242341F8D400724921 /* RecomentCategorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CBF7B222341F8D400724921 /* RecomentCategorCell.xib */; };
+		4CBF7B282342349300724921 /* LBUserRecomentViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF7B262342349300724921 /* LBUserRecomentViewCell.m */; };
+		4CBF7B292342349300724921 /* LBUserRecomentViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4CBF7B272342349300724921 /* LBUserRecomentViewCell.xib */; };
+		4CBF7B2C234238D400724921 /* LBRecommentUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CBF7B2B234238D400724921 /* LBRecommentUserModel.m */; };
 		BCBA5A52E813E961044AFA1C /* libPods-LBbaisibudejie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B74B486FA644258BF902C2 /* libPods-LBbaisibudejie.a */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +94,16 @@
 		4CBF7B1723326D0A00724921 /* LBRecommentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBRecommentController.m; sourceTree = "<group>"; };
 		4CBF7B1823326D0A00724921 /* LBRecommentController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LBRecommentController.xib; sourceTree = "<group>"; };
 		4CBF7B1B23326E0E00724921 /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
+		4CBF7B1D2341F74200724921 /* LBRecommentCategor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBRecommentCategor.h; sourceTree = "<group>"; };
+		4CBF7B1E2341F74200724921 /* LBRecommentCategor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBRecommentCategor.m; sourceTree = "<group>"; };
+		4CBF7B202341F8D400724921 /* RecomentCategorCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecomentCategorCell.h; sourceTree = "<group>"; };
+		4CBF7B212341F8D400724921 /* RecomentCategorCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecomentCategorCell.m; sourceTree = "<group>"; };
+		4CBF7B222341F8D400724921 /* RecomentCategorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecomentCategorCell.xib; sourceTree = "<group>"; };
+		4CBF7B252342349300724921 /* LBUserRecomentViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBUserRecomentViewCell.h; sourceTree = "<group>"; };
+		4CBF7B262342349300724921 /* LBUserRecomentViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBUserRecomentViewCell.m; sourceTree = "<group>"; };
+		4CBF7B272342349300724921 /* LBUserRecomentViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LBUserRecomentViewCell.xib; sourceTree = "<group>"; };
+		4CBF7B2A234238D400724921 /* LBRecommentUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LBRecommentUserModel.h; sourceTree = "<group>"; };
+		4CBF7B2B234238D400724921 /* LBRecommentUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LBRecommentUserModel.m; sourceTree = "<group>"; };
 		9AF7FC7F82BEB6F2080547D1 /* Pods-LBbaisibudejie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBbaisibudejie.release.xcconfig"; path = "Pods/Target Support Files/Pods-LBbaisibudejie/Pods-LBbaisibudejie.release.xcconfig"; sourceTree = "<group>"; };
 		D3897DE3D3D29273E1B90F4A /* Pods-LBbaisibudejie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LBbaisibudejie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LBbaisibudejie/Pods-LBbaisibudejie.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -394,6 +410,10 @@
 		4CBF7AF3232FC0E900724921 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				4CBF7B1D2341F74200724921 /* LBRecommentCategor.h */,
+				4CBF7B1E2341F74200724921 /* LBRecommentCategor.m */,
+				4CBF7B2A234238D400724921 /* LBRecommentUserModel.h */,
+				4CBF7B2B234238D400724921 /* LBRecommentUserModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -401,6 +421,12 @@
 		4CBF7AF4232FC0E900724921 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4CBF7B202341F8D400724921 /* RecomentCategorCell.h */,
+				4CBF7B212341F8D400724921 /* RecomentCategorCell.m */,
+				4CBF7B222341F8D400724921 /* RecomentCategorCell.xib */,
+				4CBF7B252342349300724921 /* LBUserRecomentViewCell.h */,
+				4CBF7B262342349300724921 /* LBUserRecomentViewCell.m */,
+				4CBF7B272342349300724921 /* LBUserRecomentViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -527,7 +553,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CBF7B242341F8D400724921 /* RecomentCategorCell.xib in Resources */,
 				4CBF7B152332678400724921 /* FriendViewController.xib in Resources */,
+				4CBF7B292342349300724921 /* LBUserRecomentViewCell.xib in Resources */,
 				4CBF7AB6232FBC4800724921 /* LaunchScreen.storyboard in Resources */,
 				4CBF7B1A23326D0A00724921 /* LBRecommentController.xib in Resources */,
 				4CBF7AB3232FBC4800724921 /* Assets.xcassets in Resources */,
@@ -598,14 +626,18 @@
 			files = (
 				4CBF7B0A232FC45600724921 /* BoTaBar.m in Sources */,
 				4CBF7B1C23326E0E00724921 /* Foundation+Log.m in Sources */,
+				4CBF7B232341F8D400724921 /* RecomentCategorCell.m in Sources */,
 				4CBF7B04232FC3BB00724921 /* NewViewController.m in Sources */,
 				4CBF7B01232FC39A00724921 /* MeViewController.m in Sources */,
 				4CBF7AB9232FBC4800724921 /* main.m in Sources */,
 				4CBF7B132332600900724921 /* BoNavigationController.m in Sources */,
+				4CBF7B1F2341F74200724921 /* LBRecommentCategor.m in Sources */,
 				4CBF7AF7232FC1B800724921 /* UIView+XMGExtension.m in Sources */,
+				4CBF7B2C234238D400724921 /* LBRecommentUserModel.m in Sources */,
 				4CBF7AAB232FBC4700724921 /* AppDelegate.m in Sources */,
 				4CBF7AFE232FC37600724921 /* FriendViewController.m in Sources */,
 				4CBF7B1923326D0A00724921 /* LBRecommentController.m in Sources */,
+				4CBF7B282342349300724921 /* LBUserRecomentViewCell.m in Sources */,
 				4CBF7B0D232FC46800724921 /* BoTabarController.m in Sources */,
 				4CBF7B10232FC6CC00724921 /* HttpTool.m in Sources */,
 				4CBF7AFB232FC35600724921 /* EssenceViewController.m in Sources */,
