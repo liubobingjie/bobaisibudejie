@@ -8,6 +8,7 @@
 
 #import "FriendViewController.h"
 #import "LBRecommentController.h"
+#import "LBLoginRegistController.h"
 
 @interface FriendViewController ()
 
@@ -31,6 +32,10 @@
     LBRecommentController *vc  = [[LBRecommentController alloc]init];
     [self.navigationController pushViewController:vc animated:YES];
     
+}
+- (IBAction)loginClick:(id)sender {
+    LBLoginRegistController *vc = [[LBLoginRegistController alloc]init];
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 /*

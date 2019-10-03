@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LBRecommentCategor : NSObject
 
-@property (nonatomic, strong)NSString *id;
+@property (nonatomic, strong)NSString *ID;
 
 @property (nonatomic, strong)NSString *name;
 

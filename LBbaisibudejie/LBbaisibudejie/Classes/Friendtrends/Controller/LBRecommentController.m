@@ -70,7 +70,7 @@ static NSString *const userID = @"user";
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"list";
     params[@"c"] = @"subscribe";
-    params[@"category_id"] = cate.id;
+    params[@"category_id"] = cate.ID;
     
     self.params = params;
     [HttpTool getWithPath:nil params:params success:^(id json) {
@@ -111,7 +111,7 @@ static NSString *const userID = @"user";
     NSMutableDictionary *params = [NSMutableDictionary dictionary];
     params[@"a"] = @"list";
     params[@"c"] = @"subscribe";
-    params[@"category_id"] = cate.id;
+    params[@"category_id"] = cate.ID;
     
     params[@"page"] =@(++cate.currentPage);
     

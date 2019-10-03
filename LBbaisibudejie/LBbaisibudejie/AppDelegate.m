@@ -8,6 +8,10 @@
 
 #import "AppDelegate.h"
 #import "BoTabarController.h"
+#import "LBPushGuideView.h"
+
+static NSString *CFBundleShortVersionString = @"CFBundleShortVersionString";
+
 
 @interface AppDelegate ()
 
@@ -21,6 +25,19 @@
     self.window.rootViewController = [[BoTabarController alloc]init];
     self.window.backgroundColor = UIColor.whiteColor;
     [self.window makeKeyAndVisible];
+    
+    NSString *currentVersion = [NSBundle mainBundle].infoDictionary[CFBundleShortVersionString];
+    NSString *sandboxVersion = [[NSUserDefaults standardUserDefaults]stringForKey:CFBundleShortVersionString];
+    
+    if(![sandboxVersion isEqualToString:currentVersion]){
+        LBPushGuideView *guide = [LBPushGuideView guideview];
+        guide.frame = self.window.bounds;
+        [self.window addSubview:guide];
+        
+        [[NSUserDefaults standardUserDefaults]setValue:currentVersion forKey:CFBundleShortVersionString];
+        [[NSUserDefaults standardUserDefaults] synchronize];
+    }
+    
 
     return YES;
 }
